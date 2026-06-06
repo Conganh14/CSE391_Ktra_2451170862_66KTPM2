@@ -19,13 +19,13 @@
   },
   {
     "id": 4,
-    "task": "Prepare presentation",
+    "task": "Go to market",
     "priority": "High",
     "status": "To Do"
   },
   {
     "id": 5,
-    "task": "Plan weekly meals",
+    "task": "Go to market",
     "priority": "Low",
     "status": "In Progress"
   }
