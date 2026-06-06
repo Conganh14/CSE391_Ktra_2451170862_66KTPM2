@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List - Exam 2024</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5" style="max-width: 800px">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Task List</h2>
+        <button
+          class="btn btn-primary px-4 rounded-pill"
+          data-bs-toggle="modal"
+          data-bs-target="#addTaskModal"
+        >
+          <i class="bi bi-plus"></i> Add Task
+        </button>
+      </div>
+
+      <div id="taskList"></div>
+    </div>
+
+    <div class="modal fade" id="addTaskModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Add Task</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="taskForm">
+              <div class="mb-3">
+                <label class="form-label text-muted small">Task</label>
+                <input
+                  type="text"
+                  id="taskInput"
+                  class="form-control bg-light"
+                  placeholder="Type your task here"
+                  required
+                />
+                <div id="errorMsg" class="text-danger small mt-1"></div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-muted small d-block"
+                  >Priority</label
+                >
+                <div class="btn-group w-100" role="group">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="priority"
+                    id="high"
+                    value="High"
+                    checked
+                  />
+                  <label class="btn btn-outline-danger" for="high">High</label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="priority"
+                    id="medium"
+                    value="Medium"
+                  />
+                  <label class="btn btn-outline-warning" for="medium"
+                    >Medium</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="priority"
+                    id="low"
+                    value="Low"
+                  />
+                  <label class="btn btn-outline-success" for="low">Low</label>
+                </div>
+              </div>
+              <div class="text-end mt-4">
+                <button type="submit" class="btn btn-secondary px-5">
+                  Add
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
