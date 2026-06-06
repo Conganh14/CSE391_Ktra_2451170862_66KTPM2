@@ -1,0 +1,27 @@
+body {
+  background-color: #eff2ff;
+}
+
+.task-shell {
+  background: #eef1ff;
+}
+
+.task-row {
+  min-height: 88px;
+}
+
+.status-dot {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #7c3aed;
+}
+
+.status-dot.status-done {
+  background-color: #7c3aed;
+}
+
+.status-dot.status-progress {
+  background: linear-gradient(135deg, #7c3aed 0%, #fff 50%);
+}

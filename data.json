@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Go to gym",
+    "task": "Go to gym",
     "priority": "High",
     "status": "To Do"
   },
   {
     "id": 2,
-    "name": "Read a book",
+    "task": "Read a book",
     "priority": "Low",
     "status": "Done"
   },
   {
     "id": 3,
-    "name": "Go to market",
+    "task": "Go to market",
     "priority": "Medium",
     "status": "In Progress"
   },
   {
     "id": 4,
-    "name": "Do homework",
+    "task": "Prepare presentation",
     "priority": "High",
     "status": "To Do"
   },
   {
     "id": 5,
-    "name": "Clean room",
+    "task": "Plan weekly meals",
     "priority": "Low",
-    "status": "Done"
+    "status": "In Progress"
   }
 ]
