@@ -48,7 +48,7 @@ function renderTasks(tasks) {
 }
 
 function resetValidation() {
-  taskNameInput.classList.remove("is-gitinvalid");
+  taskNameInput.classList.remove("is-invalid");
   taskHelp.textContent = "";
 }
 
